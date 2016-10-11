@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="BeanMuhendis" class="com.mustafazorbaz.Muhendis">
+	  <property name="muhendisList">
+		  <list>
+			  <value>Mustafa ZORBAZ</value>
+			  <value>Semra Sematik</value>
+			  <value>Hakan titanik :)</value>
+			  <value>Gürkan pilatonik :D</value>
+			  <value>Kodlama Eğlendikçe Güzeldir</value>
+		  </list>
+	  </property>
+	  
+	  <property name="muhendisSet">
+		  <set>
+			  <value>Kemal Sunal</value>
+			  <value>Emin Can </value>
+			  <value>Ferdi Tayfur</value>
+		  </set>
+	  </property>
+	 
+	  <property name="muhendisMap"> 
+		  <map>
+			  <entry key="1" value="Müjde Ar"></entry>
+			  <entry key="2" value="Serhat Orlok"></entry>
+		  </map>
+	  </property>
+	  
+	  <property name="muhendisProperties">
+		  <props>
+			  <prop key="Java">Hibernate</prop>
+			  <prop key="PHP">Laravel</prop>
+		  </props>
+	  </property>
+	  
+  </bean>
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	 <bean id="muhendis" class="com.mustafazorbaz.Muhendis">
+	 <constructor-arg name="adi"    index="0" type="java.lang.String" value="Mustafa"/>
+	 <constructor-arg name="soyadi" index="1" type="java.lang.String" value="Zorbaz"/>
+	 <constructor-arg name="alan"   index="2"          type="java.lang.String" value="Yazılım"/>
+	 <constructor-arg name="tecrube"  index="3"  value="3"/>
+	 </bean>
+</beans>

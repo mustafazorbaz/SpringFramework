@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	
+	<bean id="experience" class="com.mustafazorbaz.Experience">
+		<property name="java" value="true"/>
+		<property name="android" value="true"/> 
+		<property name="c" value="false" />
+		<property name="php" value="true" />
+	</bean>
+	
+	
+	
+	<bean id="engineer" class="com.mustafazorbaz.Engineer" autowire="byName">
+		<property name="name" value="Mustafa"></property>
+		<property name="surname" value="Zorbaz"></property> 
+	</bean>
+	
+	<bean id="adress" class="com.mustafazorbaz.Adress">
+	<property name="street" value="Sehitler Cad"/>
+	<property name="neighborhood" value="Umur Bey Mah."></property>
+	<property name="number" value="25"></property>
+	</bean>
+</beans>

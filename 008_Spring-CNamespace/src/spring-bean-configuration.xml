@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="beanIsyeri" class="com.mustafazorbaz.Isyeri">
+		<property name="adiIsyeri" value="OnlyUniqueSoft"></property>
+		<property name="adresIsyeri" value="Antalya"></property>
+	</bean>
+	
+	
+	<!--  
+	<bean id="beanMuhendis" class="com.mustafazorbaz.Muhendis">
+		<constructor-arg name="adi" value="Mustafa"></constructor-arg>
+		<constructor-arg name="soyadi" value="Zorbaz"></constructor-arg>
+		<constructor-arg name="alan" value="Yazılım"></constructor-arg>
+		<constructor-arg name="tecrube" value="3"></constructor-arg>
+		<constructor-arg name="isyeri" ref="beanIsyeri"></constructor-arg>
+	</bean>
+	-->
+	
+	<!--  
+	<bean
+	id="beanMuhendis" class="com.mustafazorbaz.Muhendis"
+	c:_0="Mustafa"
+	c:_1="ZORBAZ"
+	c:_2="Java Application"
+	c:_3="3"
+	c:_4-ref="beanIsyeri"
+	/>
+	-->
+	
+	<bean
+	id="beanMuhendis" class="com.mustafazorbaz.Muhendis"
+	c:adi="Mustafa"
+	c:soyadi="ZORBAZ"
+	c:alan="Java Application"
+	c:tecrube="3"
+	c:isyeri-ref="beanIsyeri"
+	/>
+
+
+</beans>

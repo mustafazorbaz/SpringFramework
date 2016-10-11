@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="eventClosedBean" class="com.mustafazorbaz.ContextEventClosedHandler"></bean>
+	
+	<bean id="eventRefreshBean"
+		class="com.mustafazorbaz.ContextEventRefreshingHandler">
+	</bean>
+	<bean id="eventStartedBean"
+		class="com.mustafazorbaz.ContextEventStartedHandler">
+	</bean>
+	<bean id="eventStopBean"
+		class="com.mustafazorbaz.ContextEventStoptedHandler">
+	</bean>
+	<bean id="arabaBean" class="com.mustafazorbaz.Araba">
+		<property name="marka" value="BMW"></property>
+		<property name="model" value="2015"></property>
+	</bean>
+</beans>
